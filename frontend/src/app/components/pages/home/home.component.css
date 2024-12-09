@@ -1,0 +1,105 @@
+/* General Styles */
+.responsive-container {
+  max-inline-size: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.column-third, .column-two-third, .column-full {
+  padding: 15px;
+}
+
+.column-third {
+  flex: 0 0 33.33%;
+  max-inline-size: 33.33%;
+}
+
+.column-two-third {
+  flex: 0 0 66.66%;
+  max-inline-size: 66.66%;
+  margin-block-start: 30px; /* Décalage vers le bas */
+}
+
+.column-full {
+  flex: 0 0 100%;
+  max-inline-size: 100%;
+  text-align: center;
+}
+
+/* Hero Slider Section */
+.hero-slider-section {
+  position: relative;
+  inline-size: 100%;
+  background-color: #f5f5f5;
+  padding: 20px 0;
+}
+
+.hero-slider-section .hero-form {
+  position: absolute;
+  inset-block-end: calc(10% - 60px); /* Décalé de 30px supplémentaire */
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  inline-size: 80%;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Find Cars Section */
+.find-cars h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-block-end: 15px;
+}
+
+/* Subtitle and Title */
+.subtitle {
+  font-size: 1rem;
+  color: #999;
+  margin-block-end: 5px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-block-end: 20px;
+}
+
+/* Components */
+app-featured-voiture-list,
+app-testimonial,
+app-blog-list,
+app-about-section,
+app-services-list,
+app-become-driver-section {
+  display: block;
+  margin: 20px 0;
+}
+
+app-become-driver-section {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .column-third, .column-two-third {
+    flex: 0 0 100%;
+    max-inline-size: 100%;
+  }
+  .hero-slider-section .hero-form {
+    inset-block-end: calc(10% - 30px); /* Ajustement pour les petits écrans */
+    inline-size: 90%;
+  }
+}

@@ -1,0 +1,46 @@
+<div class="car__item">
+    <div class="car__img">
+      <img [src]="voiture.agenceLogo" alt="{{ voiture.agence }}" class="logo-agence" />
+      <img [src]="voiture.imgUrl" alt="{{ voiture.carName }}" class="w-100" />
+      <span *ngIf="voiture.featured">Offres exceptionnelles</span>
+    </div>
+  
+    <div class="car__item-content mt-4">
+      <h4 class="section__title text-center">{{ voiture.carName }}</h4>
+      <h6 class="rent__price text-center mt-4">
+        {{ voiture.price }}.00 DT
+        <span>/Jour</span>
+      </h6>
+  
+      <div class="car__item-info d-flex align-items-center justify-content-between mt-3 md-4">
+        <span class="d-flex align-items-center gap-1">
+          <i class="ri-car-line"></i>{{ voiture.category }}
+        </span>
+        <span class="d-flex align-items-center gap-1">
+          <i class="ri-settings-2--line"></i>{{ voiture.transmistion }}
+        </span>
+        <span class="d-flex align-items-center gap-1">
+          <i class="ri-timer-flesh-line"></i>{{ voiture.toit }}
+        </span>
+        <span class="d-flex align-items-center gap-1">{{ voiture.brand }}</span>
+      </div>
+  
+      <div class="car__item-info d-flex align-items-center justify-content-between mt-3 md-4">
+        <span class="d-flex align-items-center gap-1">
+          <i class="ri-map-pin-line"></i>{{ voiture.local }}
+        </span>
+        <span class="d-flex align-items-center gap-1">
+          <i class="ri-settings-2--line"></i>{{ voiture.carburant }}
+        </span>
+      </div>
+  
+      <button class="w-50 car__item-btn car__btn-rent" (click)="rentCar()">
+        Louer
+      </button>
+  
+      <button class="w-50 car__item-btn car__btn-details" (click)="viewDetails()">
+        Détails
+      </button>
+    </div>
+</div>
+  

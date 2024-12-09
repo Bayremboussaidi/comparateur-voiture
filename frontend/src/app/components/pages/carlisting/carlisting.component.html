@@ -1,0 +1,34 @@
+mmmmmmmmm
+
+<app-common-section title="Car Listing"></app-common-section>
+<div class="form__row">
+  <div class="find__cars-left">
+    <h3>Réservez votre voiture en 3 minutes</h3>
+  </div>
+  <app-find-car-form></app-find-car-form>
+</div>
+<section>
+  <div *ngIf="loading" class="text-center pt-5">Loading...</div>
+  <div *ngIf="error" class="text-center pt-5">{{ error }}</div>
+  <div *ngIf="!loading && !error">
+    <div class="d-flex align-items-center gap-3 mb-5">
+      <span class="d-flex align-items-center gap-2">
+        <i class="ri-sort-asc"></i> Sort By
+      </span>
+      <select (change)="onSortChange($event)">
+        <option>Select</option>
+        <option value="low">Low to High</option>
+        <option value="high">High to Low</option>
+      </select>
+    </div>
+
+    <div *ngFor="let voiture of voitures" [ngClass]="'car-item'">
+      <app-car-item [voiture]="voiture"></app-car-item>
+    </div>
+
+    <div class="pagination d-flex align-items-center justify-content-center mt-4 gap-3">
+      <span *ngFor="let number of pageNumbers" (click)="setPage(number)" 
+            [class.active__page]="page === number">{{ number + 1 }}</span>
+    </div>
+  </div>
+</section>

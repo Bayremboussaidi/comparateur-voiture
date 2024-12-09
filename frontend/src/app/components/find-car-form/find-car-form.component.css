@@ -1,0 +1,64 @@
+/* find-car-form.component.css */
+.find__cars-left {
+    background: linear-gradient(rgba(249, 168, 38, 0.9), rgba(249, 168, 38, 0.9)),
+                url("../../assets/all-images/toyota-offer-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 65px 35px;
+  }
+  
+  .find__cars-left h2 {
+    font-weight: 600;
+    font-size: 2.8rem;
+  }
+  
+  .form__group {
+    inline-size: 25%;
+    margin-block-end: 0;
+  }
+  
+  .form__group input {
+    border: 1px solid #7c8a972a;
+    padding: 8px 12px;
+    inline-size: 100%;
+    outline: none;
+  }
+  
+  .form__group input::placeholder {
+    color: #7c8a97;
+  }
+  
+  .form {
+    background: #fff;
+    padding-block-start: 55px;
+    padding-block-end: 50px;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+  }
+  
+  .find__car-btn {
+    background: #456F81 !important;
+    color: #fff !important;
+    padding: 8px 15px;
+    inline-size: 100%;
+    border: none;
+  }
+  
+  @media only screen and (max-inline-size: 992px) {
+     /* Responsive styles */
+     .find__cars-left {
+       padding: 65px 22px;
+     }
+     .find__cars-left h2 {
+       font-size: 1.5rem;
+     }
+     .form {
+       padding: 30px 10px;
+     }
+     .form__group input,
+     .select__group select {
+       padding: 7px10px;
+       font-size:0.8rem;
+     }
+  }

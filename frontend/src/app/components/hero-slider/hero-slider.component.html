@@ -1,0 +1,16 @@
+
+<div class="hero__slider">
+
+  <ng-container *ngFor="let slide of slides">
+
+      <div class="slider__item" [ngStyle]="{'background-image': 'linear-gradient(rgb(247, 166, 0, 0.5), rgb(69, 111, 129, 0.5)), url(../assets/all-images/slider-img/' + slide.image + ')'}">
+        <div class="slider__content">
+          <h4 class="text-light mb-3">{{ slide.title }}</h4>
+          <h1 class="text-light mb-4">{{ slide.subtitle }}</h1>
+          <button class="btn reserve__btn mt-4">
+            <a [routerLink]="slide.link">Réservez maintenant</a>
+          </button>
+        </div>
+      </div>
+    </ng-container>
+</div>

@@ -1,0 +1,22 @@
+
+
+
+<!-- find-car-form.component.html -->
+<form class="form" (ngSubmit)="searchHandler()">
+    <div class="d-flex align-items-center justify-content-between flex-wrap">
+      <div class="form__group">
+        <input type="text" placeholder="Votre déstination" #localInput required />
+      </div>
+      <div class="form__group">
+        <input type="date" placeholder="Date de début" required />
+        <input class="journey__time" type="time" placeholder="Journey time" required />
+      </div>
+      <div class="form__group">
+        <input type="date" placeholder="Date de retour" required />
+        <input class="journey__time" type="time" placeholder="Journey time" required />
+      </div>
+      <div class="form__group">
+        <button class="btn find__car-btn" type="submit">Rechercher</button>
+      </div>
+    </div>
+  </form>

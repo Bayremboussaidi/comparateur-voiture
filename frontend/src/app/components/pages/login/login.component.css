@@ -1,0 +1,103 @@
+/* login.component.css */
+.login__img {
+    inline-size: 60%;
+    text-align: center;
+}
+
+.login__img img {
+    inline-size: 70%;
+    object-fit: contain;
+}
+
+.login__form {
+    padding: 50px;
+    background: #F7A600;
+    position: relative;
+}
+
+.login__container {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    margin-block-start: 100px;
+}
+
+.login__form .user {
+    inline-size: 80px;
+    block-size: 80px;
+    position: absolute;
+    inset-block-start: -9%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -9%);
+}
+
+.login__form .user img {
+    inline-size: 100%;
+}
+
+.login__form h2 {
+    color: #fff;
+    text-align: center;
+    margin-block-end: 2rem;
+}
+
+.login__form {
+    inline-size: 40%;
+}
+
+.login__form input {
+    inline-size: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    color: var(--heading-color);
+}
+
+.login__form input:focus {
+    outline: none;
+}
+
+.auth__btn {
+    background: var(--heading-color) !important;
+    inline-size: 100%;
+    color: #fff;
+}
+
+.login__form p {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-block-start: 1.5rem;
+    text-align: center;
+}
+
+.login__form p a {
+    color: var(--heading-color);
+    text-decoration: none;
+    margin-inline-start: 5px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+    .login__img {
+        display: none;
+    }
+
+    .login__form {
+        inline-size: 70%;
+        margin: auto;
+    }
+
+    .login__container {
+        padding-block-end: 3rem;
+        margin-block-start: 70px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .login__form {
+        inline-size: 100%;
+    }
+
+    .login__container {
+        padding-block-end: 1rem;
+    }
+}

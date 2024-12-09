@@ -1,0 +1,33 @@
+<!-- login.component.html -->
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 m-auto">
+          <div class="login__container d-flex justify-content-between">
+            <div class="login__img">
+              <img src="../assets/all-images/login.jpg" alt="" />
+            </div>
+  
+            <div class="login__form">
+              <div class="user">
+                <img src="../assets/all-images/agns-img/agns-logo.jpg" alt="" />
+              </div>
+              <h2>Se connecter</h2>
+              <form (submit)="handleClick($event)">
+                <div class="form-group">
+                  <input type="email" placeholder="Email" required id="email" (input)="handleChange($event)" />
+                </div>
+                <div class="form-group">
+                  <input type="password" placeholder="Password" required id="password" (input)="handleChange($event)" />
+                </div>
+                <button class="btn secondary__btn auth__btn" type="submit">
+                  Se connecter
+                </button>
+              </form>
+              <p>Vous n'avez pas de compte ? <a routerLink="/register" class='text-black'>Créer</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

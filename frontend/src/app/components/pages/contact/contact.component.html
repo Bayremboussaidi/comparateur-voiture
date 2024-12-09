@@ -1,0 +1,59 @@
+<div title="Contact">
+    <!--app-common-section title="Contact"></app-common-section-->
+  
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-7">
+            <h6 class="fw-bold mb-4">Entrer en contact</h6>
+  
+            <form>
+              <div class="form-group contact__form">
+                <input placeholder="Votre nom" type="text" class="form-control" />
+              </div>
+              <div class="form-group contact__form">
+                <input placeholder="Email" type="email" class="form-control" />
+              </div>
+              <div class="form-group contact__form">
+                <textarea rows="5" placeholder="Message" class="form-control textarea"></textarea>
+              </div>
+  
+              <button class="contact__btn" type="submit">
+                Envoyer un message
+              </button>
+            </form>
+          </div>
+  
+          <div class="col-lg-5 col-md-5">
+            <div class="contact__info">
+              <h6 class="fw-bold">Coordonnées</h6>
+              <p class="section__description mb-0">Les berges du lac 2, Tunis</p>
+              <div class="d-flex align-items-center gap-2">
+                <h6 class="fs-6 mb-0">Téléphone:</h6>
+                <p class="section__description mb-0">+216 27 932 190</p>
+              </div>
+  
+              <div class="d-flex align-items-center gap-2">
+                <h6 class="mb-0 fs-6">Email:</h6>
+                <p class="section__description mb-0">myloclac2&#64;gmail.com</p>
+            </div>
+  
+              <h6 class="fw-bold mt-4">Suivez-nous</h6>
+  
+              <div class="d-flex align-items-center gap-4 mt-3">
+                <a
+                  *ngFor="let item of socialLinks"
+                  [href]="item.url"
+                  target="_blank"
+                  class="social__link-icon"
+                >
+                  <i [class]="item.icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+  
