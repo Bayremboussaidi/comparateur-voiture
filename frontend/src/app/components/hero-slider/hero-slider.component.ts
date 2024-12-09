@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './hero-slider.component.html',
   styleUrls: ['./hero-slider.component.css']
 })
-export class HeroSliderComponent {
+export class HeroSliderComponent {/*
   slides = [
     {
       title: 'Les principales agences de location de voitures en un seul endroit',
@@ -27,5 +27,23 @@ export class HeroSliderComponent {
       image: 'slider-3.jpg',
       link: '/cars'
     }
-  ];
+  ];*/
+
+
+  settings = {
+    fade: true,
+    speed: 2000,
+    autoplaySpeed: 3000,
+    infinite: true,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    pauseOnHover: false,
+  };
+
+  constructor(private router: Router) {}
+
+  navigateToCars() {
+    this.router.navigate(['/cars']);
+  }
 }
