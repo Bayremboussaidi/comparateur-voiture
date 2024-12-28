@@ -1,4 +1,3 @@
-
 <section 
   class="about__section"
   [ngStyle]="{'margin-top': marginTop}">
@@ -10,6 +9,7 @@
           <h4 class="section__subtitle">À propos de nous</h4>
           <h2 class="section__title">Bienvenue sur MyLoc</h2>
           <p class="section__description">Chez « My Loc », nous mettons à votre disposition une large gamme de voitures pour répondre à tous.</p>
+
           <div class="about__section-item d-flex align-items-center">
             <p class="section__description d-flex align-items-center gap-1">
               <i class="ri-checkbox-circle-line"></i> Voitures impeccables et bien entretenues
@@ -31,8 +31,7 @@
       </div>
       <div class="col-lg-6 col-md-6">
         <div class="about__img">
-
-            <img src="assets/all-images/mercedes-cla.png" alt="Car" class="w-100" />
+          <img [src]="'assets/all-images/cars-img/mercedes-cla.png'" alt="Carrr" class="w-100" />
         </div>
       </div>
     </div>

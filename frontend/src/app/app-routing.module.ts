@@ -12,13 +12,13 @@ import { RegisterComponent } from './components/pages/register/register.componen
 //import { LoginComponent } from './components/pages/login/login.component';
 import { ThankYouComponent } from './components/pages/thank-you/thank-you.component';
 import { CarlistingComponent } from './components/pages/carlisting/carlisting.component';
+import { ListcarsComponent } from './listcars/listcars.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect root to home
   { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, 
   { path: 'about', component: AboutComponent },
-  { path: 'cars', component: CarlistingComponent },
+  { path: 'listcars', component: ListcarsComponent },
 
   //{ path: 'cars/:_id', component: CarDetailsComponent }, // Car details with dynamic ID
   { path: 'blogs', component: BlogComponent }, // Blog listing

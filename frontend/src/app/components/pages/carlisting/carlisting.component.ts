@@ -52,7 +52,7 @@ export class CarlistingComponent {
 
   onSortChange(event: Event): void {
     const value = (event.target as HTMLSelectElement).value;
-    // Implement sorting logic based on `value`
+    
   }
 
   get pageNumbers(): number[] {
