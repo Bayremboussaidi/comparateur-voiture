@@ -1,0 +1,8 @@
+app-header, app-footer {
+    margin: 0;
+  }
+  
+  router-outlet {
+    display: block;
+    margin: 0;
+  }

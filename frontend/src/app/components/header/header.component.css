@@ -97,7 +97,7 @@
 }
 
 .main__navbar {
-  padding: 0; /* Remove padding to eliminate space */
+  padding: 0; 
   background: #456F81;
 }
 
@@ -114,7 +114,7 @@
 .menu {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensure space between items */
+  justify-content: space-between; 
 }
 
 .nav__list {

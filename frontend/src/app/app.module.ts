@@ -4,6 +4,8 @@ import { HttpClientModule } from '@angular/common/http'; // Import HttpClientMod
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'; // Import CUSTOM_ELEMENTS_SCHEMA
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Import FormsModule and ReactiveFormsModule
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Import BrowserAnimationsModule
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -66,6 +68,9 @@ import { ListcarsComponent } from './listcars/listcars.component';
     HttpClientModule, // Add HttpClientModule here
     SlickCarouselModule,
     NgxSliderModule,
+    FormsModule, // Add FormsModule here
+    ReactiveFormsModule, // Add ReactiveFormsModule here
+    BrowserAnimationsModule, // Add BrowserAnimationsModule here
   ],
   providers: [],
   bootstrap: [AppComponent],
