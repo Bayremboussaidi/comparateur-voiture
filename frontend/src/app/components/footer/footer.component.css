@@ -21,6 +21,26 @@
     line-height: 30px;
   }
   
+  .logo-background {
+    background-image: url('../../assets/all-images/logo.jpg');
+    background-size: contain; /* Adjust to cover if you want the image to cover the entire area */
+    background-repeat: no-repeat;
+    background-position: center left; /* Adjust position as needed */
+    display: flex;
+    align-items: center;
+    gap: 4rem; /* Adjust the gap as needed */
+    padding-inline-start: 3rem;
+    padding-inline-start: 3rem; /* Adjust padding to ensure text is not over the image */
+    block-size: 50px; /* Adjust height as needed */
+    inline-size: 200px; /* Adjust width as needed */
+  }
+
+  .logo-background span {
+    font-size: 1rem; /* Adjust the font size as needed */
+    font-style: italic; /* Make the text italic */
+    line-height: 1.2; /* Adjust the line height as needed */
+  }
+  
   .quick__link {
     border: none !important;
     background: transparent !important;

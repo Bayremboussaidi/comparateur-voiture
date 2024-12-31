@@ -27,7 +27,6 @@
 @media only screen and (max-width: 768px) {
   .about__img {
     margin-block-start: 30px;
-    margin-block-start: 30px;
   }
 }
 
@@ -35,4 +34,12 @@
   .about__section {
     margin-block-start: 280px;
   }
+}
+
+.about__img {
+  background-image: url('../../assets/classg.PNG');
+  background-size: cover;
+  background-position: center;
+  inline-size: 100%;
+  block-size: 100%;
 }
