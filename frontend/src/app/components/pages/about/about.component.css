@@ -1,21 +1,51 @@
-@media only screen and (max-width: 992px) {
-  .about__page-content h2 {
-    font-size: 1.5rem;
-  }
+/* General reset for direct parent containers */
+div > app-common-section {
+  margin: 0;
+  padding: 0;
 }
 
-@media only screen and (max-width: 767px) {
-  .about__page-img {
-    display: none;
-  }
+div > .container {
+  margin: 0;
+  padding: 0;
 }
 
-.w-100 {
-  inline-size: 100%;
+/* Reset body and root-level styles */
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.rounded-3 {
-  border-radius: 0.5rem;
+/* Reset potential parent container spacing */
+div {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure block behavior for the custom section */
+app-common-section {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure no extra space is added */
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+/* Other existing styles */
+.about__page-img {
+  background-image: url('../../../assets/all-images/drive.jpg');
+  background-size: contain; /* Adjust to cover if you want the image to cover the entire area */
+  background-repeat: no-repeat;
+  background-position: center left; /* Adjust position as needed */
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Adjust the gap as needed */
+  padding-inline-start: 3rem; /* Adjust padding to ensure text is not over the image */
+  block-size: 50px; /* Adjust height as needed */
+  inline-size: 200px; /* Adjust width as needed */
 }
 
 .section__title {
@@ -45,4 +75,16 @@
 
 .mt-4 {
   margin-block-start: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .about__page-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about__page-img {
+    display: none;
+  }
 }
