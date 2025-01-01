@@ -1,4 +1,3 @@
-/* General reset for direct parent containers */
 div > app-common-section {
   margin: 0;
   padding: 0;
@@ -44,8 +43,12 @@ app-common-section {
   align-items: center;
   gap: 1rem; /* Adjust the gap as needed */
   padding-inline-start: 3rem; /* Adjust padding to ensure text is not over the image */
-  block-size: 50px; /* Adjust height as needed */
-  inline-size: 200px; /* Adjust width as needed */
+  padding-inline-start: 20px; /* Add space to the left */
+  margin-inline-start: 10px;
+  block-size: 380px; /* Reduce height by 20% */
+  inline-size: 100px; /* Reduce width by 20% */
+  inline-size: 100%; /* Make the image responsive */
+  border-radius: 25px; /* Rounded corners */
 }
 
 .section__title {
@@ -86,5 +89,6 @@ app-common-section {
 @media only screen and (max-width: 767px) {
   .about__page-img {
     display: none;
+    margin-block-start: 30px; /* Add margin-top for smaller screens */
   }
 }

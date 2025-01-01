@@ -23,7 +23,9 @@
     padding: 8px 12px;
     inline-size: 100%;
     outline: none;
-  }
+    inline-size: 100%; /* Add this line */
+    inline-size: 100%;
+}
   
   .form__group input::placeholder {
     color: #7c8a97;
@@ -58,7 +60,7 @@
      }
      .form__group input,
      .select__group select {
-       padding: 7px10px;
+       padding: 6px10px;
        font-size:0.8rem;
      }
   }

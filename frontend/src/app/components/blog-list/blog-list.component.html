@@ -1,39 +1,35 @@
 <p>blog-list works!</p>
 <div class="row">
-    <div
-      *ngFor="let item of blogData"
-      class="col-lg-4 col-md-4 col-sm-6 mb-5"
-    >
-      <div class="blog__item">
-        <img [src]="item.imgUrl" alt="{{ item.title }}" class="w-100" />
-        <div class="blog__info p-3">
-          <a [routerLink]="['/blogs', item.title]" class="blog__title">
-            {{ item.title }}
-          </a>
-          <p class="section__description mt-3">
-            {{ item.description.length > 100
-              ? item.description.substring(0, 100) + '...'
-              : item.description }}
-          </p>
-          <a [routerLink]="['/blogs', item.title]" class="read__more">Read More</a>
-  
-          <div class="blog__time pt-3 mt-3 d-flex align-items-center justify-content-between">
-            <span class="blog__author">
-              <i class="ri-user-line"></i> {{ item.author }}
+  <div *ngFor="let item of blogData" class="col-lg-4 col-md-4 col-sm-6 mb-5">
+    <div class="blog__item">
+      <img [src]="item.imgUrl" alt="{{ item.title }}" class="w-100" />
+      <div class="blog__info p-3">
+        <a [routerLink]="['/blogs', item.title]" class="blog__title">
+          {{ item.title }}
+        </a>
+        <p class="section__description mt-3">
+          {{ item.description.length > 100
+            ? item.description.substring(0, 100) + '...'
+            : item.description }}
+        </p>
+        <a [routerLink]="['/blogs', item.title]" class="read__more">Read More</a>
+
+        <div class="blog__time pt-3 mt-3 d-flex align-items-center justify-content-between">
+          <span class="blog__author">
+            <i class="ri-user-line"></i> {{ item.author }}
+          </span>
+
+          <div class="d-flex align-items-center gap-3">
+            <span class="d-flex align-items-center gap-1 section__description">
+              <i class="ri-calendar-line"></i> {{ item.date }}
             </span>
-  
-            <div class="d-flex align-items-center gap-3">
-              <span class="d-flex align-items-center gap-1 section__description">
-                <i class="ri-calendar-line"></i> {{ item.date }}
-              </span>
-  
-              <span class="d-flex align-items-center gap-1 section__description">
-                <i class="ri-time-line"></i> {{ item.time }}
-              </span>
-            </div>
+
+            <span class="d-flex align-items-center gap-1 section__description">
+              <i class="ri-time-line"></i> {{ item.time }}
+            </span>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+</div>
