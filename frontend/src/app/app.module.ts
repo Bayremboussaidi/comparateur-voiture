@@ -27,7 +27,7 @@ import { CarItemComponent } from './components/car-item/car-item.component';
 import { RegisterComponent } from './components/pages/register/register.component';
 import { ThankYouComponent } from './components/pages/thank-you/thank-you.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
-import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
+import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
 import { BlogListComponent } from './components/blog-list/blog-list.component';
 import { CommonSectionComponent } from './components/common-section/common-section.component';
 import { LoginComponent } from './components/pages/login/login.component';

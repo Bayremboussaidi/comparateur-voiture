@@ -1,11 +1,13 @@
 <p>blog-list works!</p>
 <div class="row">
   <div *ngFor="let item of blogData" class="col-lg-4 col-md-4 col-sm-6 mb-5">
-    <div class="blog__item">
-      <img [src]="item.imgUrl" alt="{{ item.title }}" class="w-100" />
+    <div class="blog__item">  
+      <a [routerLink]="['/blogs', item.id]" class="blog__title">
+        {{ item.imgUrl }}
+      </a>
       <div class="blog__info p-3">
-        <a [routerLink]="['/blogs', item.title]" class="blog__title">
-          {{ item.title }}
+        <a [routerLink]="['/blogs', item.id]" class="blog__title" [ngStyle]="{'background-image': 'url(' + item.imgUrl + ')'}">
+          <!-- The title text is now hidden, and the background image is used instead -->
         </a>
         <p class="section__description mt-3">
           {{ item.description.length > 100

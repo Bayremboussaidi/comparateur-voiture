@@ -4,7 +4,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { AboutComponent } from './components/pages/about/about.component';
 //import { CarDetailsComponent } from './components/pages/car-details/car-details.component';
 import { BlogComponent } from './components/pages/blog/blog.component';
-import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
+import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 //import { CarSearchComponent } from './components/pages/car-search/car-search.component';
@@ -22,7 +22,7 @@ const routes: Routes = [
 
   //{ path: 'cars/:_id', component: CarDetailsComponent }, // Car details with dynamic ID
   { path: 'blogs', component: BlogComponent }, // Blog listing
-  { path: 'blogs/:slug', component: BlogDetailsComponent }, // Blog details with dynamic slug
+  { path: 'blogs/:id', component: BlogDetailsComponent }, // Blog details with dynamic slug
   { path: 'contact', component: ContactComponent },
   //{ path: 'voitures/search', component: CarSearchComponent }, // Car search page
   { path: 'register', component: RegisterComponent },

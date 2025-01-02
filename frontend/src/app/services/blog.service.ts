@@ -4,6 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class BlogService {
+  getBlogById(id: number ) {
+    return this.blogData.find(blog => blog.id === id);
+  }
   blogData = [
     {
       id: 6,
@@ -21,7 +24,7 @@ export class BlogService {
       author: "admin",
       date: "21 Nov, 2024",
       time: "10h",
-      imgUrl: 'assets/blog-img/blog-8.jpg',
+      imgUrl: "url('../assets/blog-img/blog-8.jpg')",
       description: "✨ Un service sur mesure : Chauffeur et véhicule à votre disposition pour tous vos déplacements. 🌍🚘",
       quote: "#myloc #chauffeur #visite #tourisme #shopping #ServicePremium #deplacement",
     },
